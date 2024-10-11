@@ -3,26 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Incrustar Reproductor de Audio</title>
+    <title>Reproductor de Audio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
         }
 
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        audio {
+            width: 100%;
+            outline: none;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://github.com/squaalldev/pruebaaudio/blob/c4122fbe56271be359c98ee5a88bb5fa8a7246fb/Meditaci%C3%B3n%20Primera%20y%20Segunda%20semana%20Libro%20Deja%20de%20ser%20t%C3%BA%20Dr.%20%20Joe%20Dispenza.mp3"></iframe>
+    <div class="container">
+        <h1>Reproduce tu audio</h1>
+        <audio controls>
+            <source src="https://github.com/squaalldev/pruebaaudio/blob/c4122fbe56271be359c98ee5a88bb5fa8a7246fb/Meditaci%C3%B3n%20Primera%20y%20Segunda%20semana%20Libro%20Deja%20de%20ser%20t%C3%BA%20Dr.%20%20Joe%20Dispenza.mp3" type="audio/mp4">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
 </body>
 </html>
